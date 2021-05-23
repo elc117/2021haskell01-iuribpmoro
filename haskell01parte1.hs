@@ -1,24 +1,27 @@
 -- Prática 01 de Haskell - Parte 1
 -- Nome: Iuri Bernardo Picolini Moro
 
+import MyFunctions
+
+
 sumSquares :: Int -> Int -> Int
 sumSquares x y = (x^2) + (y^2)
 
 
-circleArea :: Float -> Float
-circleArea r = pi * (r^2)
+--circleArea :: Float -> Float
+--circleArea r = pi * (r^2)
 
 
 age :: Int -> Int -> Int
 age bithYear presentYear = presentYear - bithYear
 
 
-isElderly :: Int -> Bool
-isElderly age = if age > 65 then True else False
+--isElderly :: Int -> Bool
+--isElderly age = if age > 65 then True else False
 
 
-htmlItem :: String -> String
-htmlItem string = "<li>" ++ string ++ "</li>"
+--htmlItem :: String -> String
+--htmlItem string = "<li>" ++ string ++ "</li>"
 
 
 startsWithA :: String -> Bool
@@ -37,5 +40,5 @@ hasEqHeads :: [Int] -> [Int] -> Bool
 hasEqHeads list1 list2 = if head list1 == head list2 then True else False
 
 
-isVowel2 :: Char -> Bool
-isVowel2 char = if elem char "aeiouAEIOU" then True else False
+--isVowel2 :: Char -> Bool
+--isVowel2 char = if elem char "aeiouAEIOU" then True else False
