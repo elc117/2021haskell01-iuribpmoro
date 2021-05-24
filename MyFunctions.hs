@@ -12,7 +12,7 @@ circleArea r = pi * (r^2)
 
 
 isElderly :: Int -> Bool
-isElderly age = if age > 65 then True else False
+isElderly age = age > 65
 
 
 htmlItem :: String -> String
@@ -20,7 +20,7 @@ htmlItem string = "<li>" ++ string ++ "</li>"
 
 
 isVowel2 :: Char -> Bool
-isVowel2 char = if elem char "aeiouAEIOU" then True else False
+isVowel2 char = elem char "aeiouAEIOU"
 
 
 isEvenBetter  :: Int -> Bool

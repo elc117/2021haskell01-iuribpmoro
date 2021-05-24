@@ -25,7 +25,7 @@ onlyEven list = filter isEvenBetter list
 
 
 between60and80 :: Int -> Bool
-between60and80 num = if num >= 60 && num <=80 then True else False
+between60and80 num = num >= 60 && num <=80
 
 
 onlyBetween60and80 :: [Int] -> [Int]
@@ -33,7 +33,7 @@ onlyBetween60and80 list = filter between60and80 list
 
 
 isSpace :: Char -> Bool
-isSpace char = if char == ' ' then True else False
+isSpace char = char == ' '
 
 countSpaces :: String -> Int
 countSpaces string = length (filter isSpace string)
@@ -44,9 +44,9 @@ calcAreas list = map circleArea list
 
 
 isChar :: Char -> Char -> Bool
-isChar char1 char2 = if char1 == char2 then True else False
+isChar char1 char2 = char1 == char2
 
 charFound :: Char -> String -> Bool
-charFound char string = if length (filter (isChar char) string) > 0 then True else False
+charFound char string = length (filter (isChar char) string) > 0
 
 

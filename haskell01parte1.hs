@@ -25,19 +25,19 @@ age bithYear presentYear = presentYear - bithYear
 
 
 startsWithA :: String -> Bool
-startsWithA string = if head string == 'A' then True else False
+startsWithA string = head string == 'A'
 
 
 isVerb :: String -> Bool
-isVerb string = if last string == 'r' then True else False
+isVerb string = last string == 'r'
 
 
 isVowel :: Char -> Bool
-isVowel char = if char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u' then True else False
+isVowel char = char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u'
 
 
 hasEqHeads :: [Int] -> [Int] -> Bool
-hasEqHeads list1 list2 = if head list1 == head list2 then True else False
+hasEqHeads list1 list2 = head list1 == head list2
 
 
 --isVowel2 :: Char -> Bool
